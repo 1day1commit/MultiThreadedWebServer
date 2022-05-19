@@ -1,9 +1,7 @@
 from fileinput import filename
 import socket, threading
 from datetime import datetime
-
 # Setting up the multithreading server
-
 class ClientThread(threading.Thread):
     def __init__(self,clientAddress,clientsocket):
         threading.Thread.__init__(self)
